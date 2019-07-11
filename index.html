@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title> Dot's Website</title> 
+        <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(250, 142, 187);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(252, 169, 204);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="all-contents"> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="sidebar">
+                    <img src =https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/66464064_10156342871422596_117737358664663040_n.jpg?_nc_cat=103&_nc_oc=AQluo6UTe1E9OKBHsvMtNVaRTPU52Hil6dlkeBmqKiMT1oDnFN0F3hJRhk6xtjXvjioiRTYlfZKFv4dmiY2LyL1u&_nc_ht=scontent-atl3-1.xx&oh=78b6b3126b63a6ce6860390cb96bcf63&oe=5DBECAEC>
+                </div>
+
+                <div class="content">
+                    <header> Dot Behrens</header>
+                    <p>Student at Operation Spark</p>
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Poodles</li>
+                            <li>Reading</li>
+                            <li>Heroes of the Storm</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div> 
+    </body>
+</html>
