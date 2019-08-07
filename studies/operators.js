@@ -11,10 +11,10 @@
 */ 
 
 // the  = operator assigns values to something
- var i = 1
+ var i = 1;
 // * values can be reasigned
-* i = 2
-*		
+     i = 2;
+	
 // *       +=  ---- adds to the existing value and asigns the new value to the existing value at the same time
 count = 0
 count += 1
@@ -36,56 +36,97 @@ count *= 3
 count = 9
 
 // *Comparison Operators evaluate to true or false.
-// *	Binary Comparison Operators
+// *	Binary Comparison Operator
 // 		< , > , <=, >=
-// 	 ==  losely equal to with compare 5 == "5"
+5 < 6
+5 > 4
+5 <= 5
+5 >= 2
+// 	 ==  losely equal to will compare unlike data types
+"5" == 5
 // *	Strict Comparison Operators
 // *		===  strictly equal to 
+5 === 5
 // *		!==   strictly not equal to
+5 !== 6
+5 !== '5'
 
 
-*Arithmetic
-*	+, -, /, *
-*	++  adds 1 to existing value
-*	--   subtracts 1 from existing value
+// *Arithmetic
+// *	+, -, /, *
+ 1 + 1
+//  --- return 2
+ 1 - 1
+//  --- return 0
+ 1 / 1
+//  --- return 1
+ 1 *1 
+//  --- return 1
+//  ++  adds 1 to existing value , useful for incrementing and counting
+ 1++
+//  ---  return 2
+//  --   subtracts 1 from existing value
+ 1-- 
+//  --- returns 0
 
 
-*Logical
-*	&&     and; both conditions must be true
-*	||     or; either condition may be true
-*	!      bang; flips thruthiness of its value
-*	!=	   not equal to 
-    !==    not strictly equal to 
-*	!!     double bang; makes a value boolean if it equaled 0, null, undefined now false else true
-
-Unary Operators are operators with only one operend
-Unary Operators include
-
-Unary plus +	convert the operand into a number
-Unary negation - Tries to convert the operand into a number and negates after
-Logical Not !	Converts to boolean value then negates it
-Increment ++	Adds one to its operand
-Decrement --	Decrements by one from its operand
-Bitwise not ~	Inverts all the bits in the operand and returns a number
-typeof	Returns a string which is the type of the operand
-delete	Deletes specific index of an array or specific property of an object
-void	Discards a return value of an expression.
-
-
-Binary Operators are operatros that take two operends.
-Binary Operators include arithmetic and logical operators
-
-Ternary Operators
-A ternary operator takes three operentds. 
-ternary operators are represented by ?
-
-the use of it is equivalent to an if statement such as:
-
-if ( condition ) {
-  value if true;
-} else {
-  value if false;
+// *Logical
+// *	&&  and; both conditions must be true
+if( a = b $$ b = c){
+    console.log('a is equal to c')
 }
 
-Using a ternary operator the code can look like:
-condition ? value if true : value if false
+// *	||     or; either condition may be true
+if(a = 0 || b = 0){
+    console.log('there is a 0')
+}
+
+// *	!      bang; flips thruthiness of its value
+if(!a){
+    a = 0
+}
+//  --- reads if there is no a variable then a is assigned to 0
+
+// *	!=	   not equal to 
+
+if('5' != 5){
+    return false
+}
+    // !==    not strictly equal to 
+if('apples' !== 'oranges'){
+    return true
+}    
+
+// *	!!     double bang; makes a value boolean if it equaled 0, null, undefined now false else true
+
+// Unary Operators are operators with only one operend
+// Unary Operators include
+
+// Unary plus +	convert the operand into a number
+// Unary negation - Tries to convert the operand into a number and negates after
+// Logical Not !	Converts to boolean value then negates it
+// Increment ++	Adds one to its operand
+// Decrement --	Decrements by one from its operand
+// Bitwise not ~	Inverts all the bits in the operand and returns a number
+// typeof	Returns a string which is the type of the operand
+// delete	Deletes specific index of an array or specific property of an object
+// void	Discards a return value of an expression.
+
+
+// Binary Operators are operatros that take two operends.
+// Binary Operators include arithmetic and logical operators
+
+// Ternary Operators
+// A ternary operator takes three operentds. 
+// ternary operators are represented by ?
+
+// the use of it is equivalent to an if statement such as:
+
+// if ( condition ) {
+//   value if true;
+// } else {
+//   value if false;
+// }
+
+// Using a ternary operator the code can look like:
+// condition ? value if true : value if false

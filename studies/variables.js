@@ -33,3 +33,33 @@ console.log(myName); // prints => bob
 var myVariable = 1;
 var myVariable = true;
 myVariable = "someString";
+
+// Hoisting
+// variables are hoisted to the top of the scope when an a code is run. The value of the variable is not hoisted.
+
+
+console.log(name)
+var name = 'Dot'
+
+//hoisted:
+// var name;
+// console.log(name)
+// name = 'Dot'
+// the code logs undefined because when console.log is called the name variable has not been defined yet. 
+// if the variable had not yet been initialized then we would get a reference error, but because the variable is hoisted, 
+// the variable is initialized before the console.log is called.
+
+// let and const are not hoisted
+
+console.log(name)
+let name = "Dot"
+
+// -- returns a reference error because let name has not been initialized
+
+// the same goes for const
+
+console.log(name)
+const name = "Dot"
+
+// -- also returns a reference error because const name has not been initalized
+
