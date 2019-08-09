@@ -38,8 +38,8 @@ myVariable = "someString";
 // variables are hoisted to the top of the scope when an a code is run. The value of the variable is not hoisted.
 
 
-console.log(name)
-var name = 'Dot'
+console.log(name);
+var name = 'Dot';
 
 //hoisted:
 // var name;
@@ -51,15 +51,15 @@ var name = 'Dot'
 
 // let and const are not hoisted
 
-console.log(name)
-let name = "Dot"
+console.log(dotsName);
+let dotsName = "Dot";
 
 // -- returns a reference error because let name has not been initialized
 
 // the same goes for const
 
-console.log(name)
-const name = "Dot"
+console.log(dotName);
+const dotName = "Dot";
 
 // -- also returns a reference error because const name has not been initalized
 

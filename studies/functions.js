@@ -22,21 +22,29 @@
  // A function's parameters are optional. Depending on the code being written a function does not need parameters or return statements.
  // If a function has a parameter but its call has no argument the arguments are undefined.
  
- function thisIsMyFunction(){
-     var a = 6
+ function thisIsAFunction(){
+     var a = 6;
  }
 
  // To call a function we use the functions name followed by the arguments to be passed into the function.
+ /*
+ 
+ Parameters vs. Argumets
+ Parameters are what is plugged into the parenthesis when defining the function. They are used like variables throughout the code body.
+ Arguments are what is in the parenthisis when the function is called. They coorespond to the parameters based on their position within the parenthisis.
+ When the code runs it will take the arguments and put them in the place of the parameters in every instance the parameters are used within the code body. 
+ 
+*/ 
  
 //  * Ex
-    thisIsMyFunction(1, 2)
+    thisIsMyFunction(1, 2);
 // -- will return  3
 
  // functions can also be created as function expressions by assigning a function to a variable. 
  
  var thisIsMyFunction = function(parameter1, parameter2){
-     return parameter1 - parameter2
- }
+     return parameter1 - parameter2;
+ };
  
 // Functions can contain closures which keep a parameter from the outer function alive within the inner function. 
 function ourFunc(y) {

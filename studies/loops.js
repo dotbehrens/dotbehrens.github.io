@@ -12,24 +12,24 @@
  
  
 
-  for (var i = 0; i < 5; i++) {
+ for (var i = 0; i < 5; i++) {
        console.log(i);
  }
  
- for(var i = 18; i > 0; i--){
-     
+ for (var j = 18; j > 0; j--){
+     console.log(j);
  }
  
-  var array = [ 'this', 'is', 'an', 'array']
+ var array = [ 'this', 'is', 'an', 'array'];
   
- for(var i = 0; i < array.length; i++){
-     console.log(array[i])
+ for(var k = 0; k < array.length; k++){
+     console.log(array[k]);
  }
 //  * To loop backwards over an array: start at the last position in the array, increment down by one each iteratation
-   var array = [ 'this', 'is', 'an', 'array']
+ 
   
-  for (var i = array.length - 1; i > -1; i--) {
-    console.log(array[i]);
+  for (var m = array.length - 1; m > -1; m--) {
+    console.log(array[m]);
   }
  
  
@@ -39,9 +39,10 @@
 //      console.log(key);  <----- logs the key strings within the object
 //      console.log(object[key]) <--- logs the value of the keys within the object
 //  }
+var object = { key: 'value'};
 
 for (var key in object){
-     console.log(object[key])
+     console.log(object[key]);
 }
  
  
@@ -51,11 +52,11 @@ for (var key in object){
 //  * while(count< 5){   <------ will continue until count is less than 5
 //      console.log(count);
 //      count++;
- }
- var count = 0
+ 
+ var count = 0;
  while(count < 5){
-      console.log(count)
-      count ++
+      console.log(count);
+      count ++;
  }
 //  -- will log 0 1 2 3 4 
  

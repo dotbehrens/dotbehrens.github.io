@@ -60,41 +60,53 @@ count = 9
 //  --- return 0
  1 / 1
 //  --- return 1
- 1 *1 
+ 1 * 1 
 //  --- return 1
+
+
 //  ++  adds 1 to existing value , useful for incrementing and counting
- 1++
-//  ---  return 2
+ var count = 0
+ count++
+ console.log(count)
+//  ---  return 1
+
+
 //  --   subtracts 1 from existing value
- 1-- 
+var count2 = 1
+count2 --
+console.log(count2)
 //  --- returns 0
 
 
 // *Logical
+
+var a;
+var b;
+var c;
 // *	&&  and; both conditions must be true
-if( a = b $$ b = c){
-    console.log('a is equal to c')
+if( a === b && b === c){
+    console.log('a is equal to c');
 }
 
 // *	||     or; either condition may be true
-if(a = 0 || b = 0){
-    console.log('there is a 0')
+if(a === 0 || b === 0){
+    console.log('there is a 0');
 }
 
 // *	!      bang; flips thruthiness of its value
 if(!a){
-    a = 0
+    a = 0;
 }
 //  --- reads if there is no a variable then a is assigned to 0
 
 // *	!=	   not equal to 
 
 if('5' != 5){
-    return false
+    return false;
 }
     // !==    not strictly equal to 
 if('apples' !== 'oranges'){
-    return true
+    return true;
 }    
 
 // *	!!     double bang; makes a value boolean if it equaled 0, null, undefined now false else true
@@ -130,3 +142,5 @@ if('apples' !== 'oranges'){
 
 // Using a ternary operator the code can look like:
 // condition ? value if true : value if false
+a === b ? c = 5: c = 7;
+// --- if a is stricly equal to b, c will be assigned to 5, otherwise c will be assigned to 7
