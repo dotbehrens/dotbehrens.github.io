@@ -1,0 +1,23 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotbehrens/dotbehrens.github.io.git"
+  },
+  "author": "dotbehrens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotbehrens/dotbehrens.github.io/issues"
+  },
+  "homepage": "https://github.com/dotbehrens/dotbehrens.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
