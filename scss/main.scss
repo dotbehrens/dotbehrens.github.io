@@ -1,14 +1,4 @@
-$primary-color: #51003B;
-$secondary-color: #eece1a;
-$show-home-image: true;
-$home-image: url(../dist/img/background.jpeg);
-$backgrond-opacity: 0.9;
-
-
-// basically a function
-@mixin easeOut {
-    transition: all 0.5s ease-out;
-}
+@import 'config';
 
 
 *{
@@ -16,6 +6,7 @@ $backgrond-opacity: 0.9;
 }
 
 body{
+    @include background;
     background: $primary-color;
     color: #fff;
     height:100%;
